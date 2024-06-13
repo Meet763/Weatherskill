@@ -1,0 +1,57 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "city",
+              "type": "AMAZON.City"
+            }
+          ],
+          "name": "WeatherIntent",
+          "samples": [
+            "give me the weather of {city}",
+            "tell me the weather of {city}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "city",
+              "type": "AMAZON.City"
+            }
+          ],
+          "name": "CityInfoIntent",
+          "samples": [
+            "tell me about {city}",
+            "give me information about {city}",
+            "what can you tell me about {city}"
+          ]
+        }
+      ],
+      "types": [],
+      "invocationName": "my weather"
+    }
+  }
+}
